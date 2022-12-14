@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🇺🇦 Borscht</title>
+    <style>
+      body {
+        background-color: rgb(255, 235, 193);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      h1 {
+        color: rgb(189, 32, 0);
+        text-align: center;
+        font-size: 50px;
+        border: 3px solid;
+        padding: 20px 20px;
+        border-radius: 10px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(226, 120, 2);
+      }
+      hr {
+        height: 1px;
+        border-color: rgb(189, 32, 0);
+        background-color: rgb(189, 32, 0);
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        margin-top: 20px;
+        line-height: 1.5;
+        font-size: 18px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        color: rgb(226, 120, 2);
+        background-color: rgb(255, 188, 128);
+        font-size: 35px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        padding: 20px 30px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in;
+        border-color: bisque;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background-color: rgb(226, 120, 2);
+        color: rgb(255, 188, 128);
+      }
+      .wikipedia {
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+        text-decoration: none;
+      }
+      .wikipedia:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: underline;
+      }
+    </style
+  </head>
+  <body>
+    <div class="container">
+      <h1>Borscht</h1>
+      <h2><em> a gem 💎 of Ukrainian culinary art </em></h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/049/original/%D0%B1%D0%BE%D1%80%D1%89.jpeg?1652296284"
+        alt="Borsch"
+      />
+      <p>
+        Borscht is not just a vegetable soup with meat or mushrooms, it is the
+        most popular first course, a delicious symbol of Ukraine. The culture of
+        Ukrainian borscht cooking has become an element of Ukraine's intangible
+        cultural heritage. The assessment of life in Ukraine is assessed using
+        the "borscht index" (similar to the "Big Mac index") to assess
+        purchasing power and determine the real inflation of the hryvnia. There
+        is a so-called borscht belt, which stretches from south-eastern Poland
+        through Ukraine, Belarus to the Volga and Don regions and coincides with
+        the borders of the medieval state of the Commonwealth, which partly
+        inherited Kievan Rus.
+      </p>
+      <p>
+        The iconic borscht is probably the most famous Ukrainian dish. It is a
+        comforting soup made with beetroot, meat or bone stock, and sautéed
+        vegetables. There are many variations - the broth can be made with beef,
+        pork, chicken, or as a vegetarian version.
+      </p>
+      <small>
+        <a
+          href="https://en.wikipedia.org/wiki/Borscht"
+          target="_blank"
+          class="wikipedia"
+        >
+          Learn more on Wikipedia 📖
+        </a>
+      </small>
+      <button class="recipeButton">Get the Recipe!🍲</button>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/048/original/borscht_6435.jpeg?1652296262"
+        alt="ingredients"
+      />
+      <p class="footer">This page was built by Mariia Sanchez</p>
+    </div>
+    <script>
+      function recipe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your Email address?");
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            "Bon appetit, " +
+              name +
+              "! The recipe was sent to you. Share with us pictures of your Borscht!"
+          );
+        }
+      }
+      let recipeButton = document.querySelector(".recipeButton");
+      recipeButton.addEventListener("click", recipe);
+    </script>
+  </body>
+</html>
